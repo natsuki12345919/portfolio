@@ -17,4 +17,14 @@ $(function () {
     return false;
   });
 
+// スマホ用ナビゲーション（スライドで開閉）
+$('#menu-sp').on('click', function () {
+  $('#nav-sp').stop().slideToggle(300);
+});
+
+// メニュー内リンクをクリックしたら閉じる
+$('#nav-sp a').on('click', function () {
+  $('#nav-sp').slideUp(300);
+});
+
 });
