@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>SAMURAI ポートフォリオ</title>
+  <title>ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -18,8 +18,12 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-          <a href="index.html">SAMURAI TARO</a>
+        <a href="index.html">
+          <img class="dog" src="img/puu2.png" alt="犬">
+          NATSUKI OHTSUKA
+        </a>
         </h1>
+        <!--PC用ナビゲーション-->
         <nav class="gnav">
           <ul class="gnav-list">
             <li class="gnav-item"><a href="index.html#works">WORKS</a></li>
@@ -28,8 +32,25 @@
             <li class="gnav-item"><a href="index.html#contact">CONTACT</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
+        
+          <!-- スマホ用メニューボタン -->
+          <button id="menu-sp">
+          <img src="img/button-menu.png" alt="ナビゲーションを開く">
+          </button>
+        </div>
+      </header>
+
+        <!-- スマホ用ナビゲーション -->
+          <div id="nav-sp">
+          <nav>
+            <ul>
+              <li><a class="gnav-item" href="#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></li>
+              <li><a class="gnav-item" href="#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILL</a></li>
+              <li><a class="gnav-item" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></li>
+              <li><a class="gnav-item" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
     <!-- /header -->
 
     <main class="content">
