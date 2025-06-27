@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>SAMURAI ポートフォリオ</title>
+  <title>ポートフォリオ</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
@@ -18,9 +18,12 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-        <img class="dog" src="img/puu2.png" alt="犬">
-          <a href="#">NATSUKI OHTSUKA</a>
+        <a href="#">
+          <img class="dog" src="img/puu2.png" alt="犬">
+          NATSUKI OHTSUKA
+        </a>
         </h1>
+        <!--PC用ナビゲーション-->
         <nav class="gnav">
           <ul class="gnav-list">
             <li class="gnav-item"><a href="#works">WORKS</a></li>
@@ -29,8 +32,26 @@
             <li class="gnav-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
-      </div>
-    </header>
+        
+          <!-- スマホ用メニューボタン -->
+          <button id="menu-sp">
+          <img src="img/button-menu.png" alt="ナビゲーションを開く">
+          </button>
+        </div>
+      </header>
+
+        <!-- スマホ用ナビゲーション -->
+          <div id="nav-sp">
+          <nav>
+            <ul>
+              <li><a class="gnav-item" href="#works" onclick="document.getElementById('nav-sp').style.display = 'none'">WORKS</a></li>
+              <li><a class="gnav-item" href="#skill" onclick="document.getElementById('nav-sp').style.display = 'none'">SKILL</a></li>
+              <li><a class="gnav-item" href="#about" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></li>
+              <li><a class="gnav-item" href="#contact" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+
     <!-- /header -->
 
     <main class="content">
@@ -38,7 +59,7 @@
       <!-- mv -->
       <div class="mv">
         <div class="mv-container">
-          <img src="img/main.png" alt="メイン画像">
+          <img src="img/main.jpg" alt="メイン画像">
         </div>
       </div>
       <!-- /mv -->
@@ -157,9 +178,11 @@
                 おおつか なつき
               </p>
               <p>
-                福岡県在住。 事務職をしていましたが、犬を飼い始めたことをきっかけに、愛犬との時間を大切にできる働き方を考えるようになり、Webデザインに興味を持ちました。
-                すぐにスクールに申し込み、学び始めたばかりですが、「犬とできる限り一緒にいられる働き方」をモチベーションに、細部まで丁寧なサイトづくりを心がけています。
-                シンプルで伝わりやすく、見る人の心に残るデザインを目指し、日々学びを深めています。
+                もともとは事務職として働いていて、日々たくさんの紙書類を扱っていました。
+                そんな中で、請求書をWeb上で送信できたときに「こんなにスムーズにできるなんて…！」と感動したのが、Webに興味を持った最初のきっかけです。
+                複数のWebサイトを比較しながら、見やすさや使いやすさの違いを感じるようになり「自分もこんな風に作れるようになりたい」と思ってスクールに通いました。
+                コツコツ学んでいく中で、知識がつながっていく感覚や仕組みがわかった瞬間の謎解きのような面白さにどんどん惹かれています。
+                愛犬に癒されながら、優しさやあたたかさを感じられるようなWebサイトを丁寧につくっていきたいと思っています。
               </p>
               
             </div>
