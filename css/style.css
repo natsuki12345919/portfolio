@@ -49,7 +49,7 @@ img {
 }
 
 /*--------------------------------
- 見出し
+見出し
 ---------------------------------*/
 .title {
   font-size: 34px;
@@ -73,7 +73,7 @@ img {
 .header {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background-color: #fff;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
@@ -121,7 +121,7 @@ img {
 
 .gnav-item a {
   position: relative;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   display: inline-block;
   padding: 5px 0;
@@ -144,6 +144,14 @@ img {
 
 .gnav-item a:hover:after {
   width: 100%;
+}
+
+#menu-sp {
+  display: none;
+}
+
+#nav-sp {
+  display: none;
 }
 
 /*--------------------------------
@@ -424,13 +432,22 @@ img {
 
   /* ヘッダー */
   .header .container {
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
   }
 
   .header-logo {
-    font-size: 15px;
-    margin-right: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 0;
   }
+  
 
   .gnav-item:not(:last-child) {
     margin-right: 10px;
@@ -438,11 +455,73 @@ img {
 
   .gnav-item a {
     font-size: 10px;
+    display: block;
+    padding: 10px 0;
   }
 
   .gnav-item a:after {
     display: none;
   }
+
+  .dog {
+    width: 80px;
+    position: absolute;
+    left: 5px;
+    top: 20%;
+  }
+
+   /* PC用ナビゲーション非表示 */
+  .gnav {
+    display: none;
+  }
+
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+  }
+
+  /* スマホ用ナビゲーションの表示切替*/
+  /* 初期状態、レイアウトと非表示設定 */
+  #nav-sp {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    border-top: 1px solid #ddd;
+    z-index: 99;
+  }
+
+  #nav-sp nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #nav-sp nav li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  #nav-sp nav li a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  } 
 
   /*  メインビジュアル */
   .mv {
